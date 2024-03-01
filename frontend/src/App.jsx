@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
-    <div className='bg-red-400'>App</div>
-  )
-}
+    <div className="">
+      <div>
+        <SearchBar />
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
