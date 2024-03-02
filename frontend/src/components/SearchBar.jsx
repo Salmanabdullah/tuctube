@@ -5,45 +5,42 @@ import { IoReorderThreeOutline, IoSearchOutline } from "react-icons/io5";
 import { MdKeyboardVoice } from "react-icons/md";
 import logo from "../assets/tuctube.svg";
 
-
 const SearchBar = () => {
   return (
-    <div className="flex p-4">
-      <div className="flex w-64 gap-8">
-        <div className="text-4xl p-2">
+    <div className="grid grid-cols-4 gap-4 ">
+      <div className="flex w-64 gap-6 p-2 pl-8">
+        <div className="text-5xl">
           <button>
             <IoReorderThreeOutline />
           </button>
         </div>
-        <div>
-          <img
-            src={logo}
-            alt="My Logo"
-            className="border-sky-400 h-12 w-12 p-1"
-          />
+        <div className="flex flex-row">
+          <img src={logo} alt="My Logo" className="h-12 w-12 p-1" />
+          <p className="text-4xl pb-2">TucTube</p>
         </div>
       </div>
-      <div className="flex border-2 border-sky-400 rounded-xl w-1/2 items-center justify-center">
-        <input
-          className="border-2 border-sky-400 rounded-xl w-5/6 p-4 pr-8"
-          type="text"
-          placeholder="Search"
-        />
-        <button className=" w-1/6 rounded-xl flex items-center justify-center text-3xl">
-          <IoSearchOutline />
-        </button>
-        <div className="text-3xl">
+      <div className="flex rounded-full col-span-2 pt-2 pb-4 gap-4 ">
+        <div className="flex w-full">
+          <input
+            className="border border-black-400 rounded-tl-full rounded-bl-full p-2 w-full"
+            type="text"
+            placeholder="Search"
+          />
+          <button className="w-20 rounded-tr-full rounded-br-full flex items-center justify-center text-2xl border-black-400 border p-1.5">
+            <IoSearchOutline />
+          </button>
+        </div>
+        <div className="text-4xl rounded-full p-1 cursor-pointer">
           <MdKeyboardVoice />
         </div>
       </div>
-
-      <div className="flex flex-row gap-12 items-center justify-center float-right">
-        <div className="">
+      <div className="flex gap-4 items-center justify-end ">
+        <div className="text-2xl cursor-pointer">
           <BsThreeDotsVertical />
         </div>
-        <div className="flex flex-row gap-4">
-          <FaRegUserCircle />
-          Sign in
+        <div className="flex items-center gap-2 border border-black-400 p-1 pr-3 pl-3 mr-4 rounded-2xl cursor-pointer">
+          <FaRegUserCircle className="text-3xl"/>
+          <p>Sign in</p>
         </div>
       </div>
     </div>
