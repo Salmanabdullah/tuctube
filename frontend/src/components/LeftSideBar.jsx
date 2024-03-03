@@ -6,7 +6,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 
 const LeftSideBar = () => {
   return (
-    <div className="flex flex-col w-28 p-4 absolute left-0 top-20 gap-8">
+    <div className="flex flex-col w-28 p-4 fixed left-0 top-20 gap-8">
       <div className="grid items-center justify-center rounded-xl cursor-pointer">
         <button className="flex items-center justify-center text-2xl">
           <GoHome />
