@@ -1,12 +1,12 @@
 import React from "react";
-import SearchBar from "../components/SearchBar";
+import Navbar from "../components/Navbar";
 import LeftSideBar from "../components/LeftSideBar";
 import DisplayVideos from "../components/DisplayVideos"; 
 
 const Home = () => {
   return (
     <div>
-      <SearchBar />
+      <Navbar />
       <LeftSideBar />
       <DisplayVideos />
     </div>
